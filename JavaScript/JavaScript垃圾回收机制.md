@@ -5,7 +5,7 @@
 **循环引用问题**: 如果两个对象互相引用，尽管已不再使用，但是垃圾回收器不会进行回收，造成内存泄漏，例如
 
 ``` javascript
-var div = document.createElement("div);
+var div = document.createElement("div");
 div.onclick = function() {
     console.log(this);
 }
